@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: #fff;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 350px;
+  padding: 1em;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 19px;
+}
+
+.card > img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card > h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 20px 0;
+  color: hsl(218, 44%, 22%);
+}
+
+.card > p {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+  text-align: center;
+  padding: 1em;
+  font-size: 1.4rem;
+  color: hsl(220, 15%, 55%);
+}
+.attribution a {
+  color: hsl(218, 95%, 57%);
+}
+.attribution a:hover {
+  color: hsl(218, 83%, 42%);
+}
+.container-button {
+  display: flex;
+}
+.button {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 2.5px 0 #39a2db59;
+  cursor: pointer;
+  background-color: hsl(212, 45%, 85%);
+  margin-right: 20px;
+}
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+
+  transition: left 1s;
+}
+.ball-1 {
+  background-color: #0c0d0e;
+}
+.ball-2 {
+  background-color: #dbe1e8;
+}
+.ball-move {
+  left: calc(100% - 40px);
+}
+.dark {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(8%) saturate(7465%)
+    hue-rotate(271deg) brightness(104%) contrast(101%);
+}
+.light {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(8%) saturate(1207%)
+    hue-rotate(180deg) brightness(91%) contrast(101%);
+}
